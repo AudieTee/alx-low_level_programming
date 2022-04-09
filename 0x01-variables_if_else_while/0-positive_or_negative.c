@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - entry point
- * Description: Prints a number and whether it is positive, negative or zero.
+ * main - Entry point
+ * 
  * Return: 0(success/correct)
  */
+
 int main(void)
 {
 int n;
