@@ -3,10 +3,8 @@
 #include <stdio.h>
 /**
  * main - entry point
- *
  * Description: Prints a number and whether it is positive, negative or zero.
- *
- * Return: 0
+ * Return: 0(success/correct)
  */
 int main(void)
 {
@@ -17,15 +15,15 @@ int n;
 	
  if (n == 0)
  {
-  printf("%d is zero", n); 
+  printf("%d is zero\n", n); 
  }
  else if (n > 0)
  {
-  printf("%d is positive", n); 
+  printf("%d is positive\n", n); 
  }
  else
  {
-  printf("%d is negative", n); 
+  printf("%d is negative\n", n); 
  }
  return (0);
 }
