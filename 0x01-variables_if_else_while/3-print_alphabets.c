@@ -1,23 +1,22 @@
 #include <stdio.h>
-
 /**
- * main - entry point
+ *main - execution and termination of program
  *
- * Description: Print lower and upper alphabet on the same line
- * Return: 0
+ *Return: ends main function
  */
-
 int main(void)
 {
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		putchar(letter);
+	}
+	for (letter = 'A'; letter <= 'Z'; letter++)
+	{
+		putchar(letter);
+	}
 	
-      int c;
-
-       for (c = 0; c < 26; ++c)
-		putchar('a' + c);
-       for (c = 0; c < 26; ++c)
-		putchar('A' + c);
-
 	putchar('\n');
-
 	return (0);
 }
