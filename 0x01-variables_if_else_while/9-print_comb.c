@@ -4,20 +4,20 @@
  *
  *Return: ends main function
  */	
-int main(void)
+	int main(void)
 {
 	int digit;
 
 	for (digit = 48; digit < 58; digit++)
 	{
 		putchar(digit);
-        	if (digit == 57)
-        	{
-            		break;
-        	}
-        	putchar(',');
+		if (digit == 57)
+		{
+		break;
+		}
+		putchar(',');
 		putchar(' ');
-    	}
-	putchar('\n');
-	return (0);
+		}
+		putchar('\n');
+		return (0);
 }
