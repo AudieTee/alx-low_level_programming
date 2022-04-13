@@ -1,20 +1,19 @@
 #include <stdio.h>
-
 /**
- * main - entry point
+ *main - execution and termination of program
  *
- * Description: Print the lowercase alphabet
- * Return: 0
+ *Return: ends main function
  */
-
 int main(void)
 {
-	int c;
-       
-	for (c = 0; c < 26; ++c)
-		putchar('a' + c);
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		putchar(letter);
+	}
 	
-        putchar('\n');
+	putchar('\n');
 	
-	return(0);
+	return (0);
 }
