@@ -1,4 +1,4 @@
-[C#include "main.h"
+#include "main.h"
 
 /**
  * times_table - prints times table
@@ -44,3 +44,4 @@ while (a <= 9)
 }
 
 }
+
