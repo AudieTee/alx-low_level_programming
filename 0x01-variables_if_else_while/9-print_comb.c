@@ -3,7 +3,7 @@
  *main - execution and termination of program
  *
  *Return: ends main function
-*/	
+*/
 	int main(void)
 {
 	int digit;
