@@ -1,18 +1,20 @@
 #include <stdio.h>
 /**
- * main - entry point
+ *main - execution and termination of program
  *
- * Description: Print lowercase alphabet excluding e and q
- * Return: 0
+ *Return: ends main function
  */
 int main(void)
 {
-	char c;
-	for (c = 'a'; c <= 'z'; ++c)
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		if (c != 'e' && c != 'q')
-			putchar(c);
+		if (letter != 'q' && letter != 'e')
+		{
+			putchar(letter);
+		}
 	}
 	putchar('\n');
 	return (0);
-	}
+}
