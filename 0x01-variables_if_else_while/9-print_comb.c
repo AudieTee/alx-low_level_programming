@@ -1,27 +1,23 @@
 #include <stdio.h>
-
 /**
- * main - entry point
+ *main - execution and termination of program
  *
- * Description: Print all possible combinations of single-digit numbers
- * Return: 0
- */
+ *Return: ends main function
+ */	
 int main(void)
 {
-	int i = 0;
+	int digit;
 
-	for (i = 0; i < 10; ++i)
+	for (digit = 48; digit < 58; digit++)
 	{
-	   putchar('0' + i);
-        
-           if (i != 9)
-	{
-                  putchar(',');
-                  putchar(' ');
-        }
-	}
-
+		putchar(digit);
+        	if (digit == 57)
+        	{
+            		break;
+        	}
+        	putchar(',');
+		putchar(' ');
+    	}
 	putchar('\n');
-
-return (0);
+	return (0);
 }
