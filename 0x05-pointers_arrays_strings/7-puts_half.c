@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h"
 
 /**
  * puts_half - prints half a string.
@@ -23,6 +23,11 @@ mid = ((len - 1) / 2) + 1;
 
 while (mid < len)
 {
+_putchar(str[mid]);
+mid++;
+}
+_putchar('\n');
+}
 _putchar(str[mid]);
 mid++;
 }
