@@ -1,1 +1,1 @@
-My low level languages readme
+my readme for pointers and arrays
