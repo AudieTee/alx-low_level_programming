@@ -30,19 +30,16 @@ int comparator(char *s, int n1, int n2)
 	}
 	return (0);
 }
+
 /**
- * _sqrt_recursion - returns the natural square root of a number.
- * @n: input number.
- * Return: natural square root.
+ * is_palindrome - detects if a string is a palindrome.
+ * @s: string.
+ * Return: 1 if s is a palindrome, 0 if not.
  */
-int _sqrt_recursion(int n)
+int is_palindrome(char *s)
 {
-	if (n < 0)
-		return (-1);
-	if (n == 0)
-		return (0);
-	if (n == 1)
+	if (*s == '\0')
 		return (1);
-	return (power_operation(n, 2));
+	return (comparator(s, 0, _strlen_recursion(s) - 1));
 }
 
