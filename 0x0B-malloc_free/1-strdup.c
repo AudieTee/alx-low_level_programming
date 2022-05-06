@@ -3,36 +3,37 @@
 #include <stdio.h>
 
 /**
- * create_array - function that creates an array
- * of chars, and initializes it with a specific char
+ * _strdup - function that returns a pointer to a
+ *  newly allocated space in memory, which contains
+ *  a copy of the string given as a parameter
  *
- * @size: size of array
- * @c: specific char
- * Return: array if success, null otherwise
+ * @str: parameter
+ * Return: pointer if success.
  */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-unsigned int i;
+unsigned int i, strlen;
 char *p;
-p = malloc(size * sizeof(*p));
-if (size == 0)
-{
+
+if (str == NULL)
 return (NULL);
-}
+
+strlen = 0;
+while (str[strlen])
+strlen++;
+
+p = malloc(sizeof(*str) * (strlen + 1));
+
 if (p == NULL)
-{
-fprintf(stderr, "failed to allocate memory\n");
-}
-else
-{
+return (0);
+
 i = 0;
-while (i < size)
+while (str[i] != '\0')
 {
-p[i] = c;
+p[i] = str[i];
 i++;
 }
-p[i] = '\0';
-}
+
 return (p);
 }
