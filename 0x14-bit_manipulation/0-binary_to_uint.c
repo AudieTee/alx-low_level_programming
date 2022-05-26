@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * binary_to_uint - Function that converts a binary number to an unsigned int.
@@ -25,4 +25,5 @@ unsigned int binary_to_uint(const char *b)
 		b++;
 	}
 	return (value);
-}[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[B[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmain.h"[C[C[C[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[B[B[B[B[B[C[B[D
+}
+
